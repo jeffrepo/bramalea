@@ -29,6 +29,6 @@
         <field name="binding_model_id" ref="product.model_product_template"/>
     </record>
 
-    <menuitem action="action_update_product_menu" id="menu_update_products" parent="product.model_product_template"/>
+    <menuitem action="action_update_products_wizard" id="menu_update_products" parent="stock.menu_stock_root"/>
 
 </odoo>

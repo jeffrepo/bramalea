@@ -12,7 +12,7 @@
     'version': '1.0',
     'depends': ['stock','product'],
     'data': [
-        'wizard/productos_vendidos_wizard.xml',
+        'wizard/update_products_wizard.xml',
     ],
     'installable': True,
     'aplication' : False,
