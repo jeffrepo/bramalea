@@ -12,6 +12,7 @@
     'version': '1.0',
     'depends': ['stock','product'],
     'data': [
+        'views/res_partner_views.xml',
         'wizard/update_products_wizard.xml',
     ],
     'installable': True,

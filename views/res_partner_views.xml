@@ -1,0 +1,25 @@
+<odoo>
+    <record id="bramalea_view_partner_form_with_subcontacts" model="ir.ui.view">
+        <field name="name">bramalea.res.partner.form.with.subcontacts</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']" position="after">
+                <page string="Wholesale Website" name="wholesale_website">
+                    <field name="child_ids" context="{'default_parent_id': active_id}">
+                        <tree editable="bottom">
+                            <field name="company_name"/>
+                            <field name="name"/>
+                            <field name="wholesale_role" string="Role"/>
+                            <field name="portal_status"/>
+                            <field name="last_login" readonly="1"/>
+                            <field name="failed_logins" readonly="1"/>
+                            <button name="action_reset_password" string="Reset Password" type="object"
+                                    attrs="{'invisible': [('user_ids','=',False)]}"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
