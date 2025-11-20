@@ -10,9 +10,12 @@
     'website': "",
     'category': 'Uncategorized',
     'version': '1.0',
-    'depends': ['stock','product'],
+    'license': 'LGPL-3',
+    'depends': ['stock', 'product', 'sale'],
     'data': [
+        'views/purchase_order_views.xml',
         'views/res_partner_views.xml',
+        'views/sale_order_views.xml',
         'wizard/update_products_wizard.xml',
     ],
     'installable': True,
