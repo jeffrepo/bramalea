@@ -13,6 +13,7 @@
     'license': 'LGPL-3',
     'depends': ['stock', 'product', 'sale'],
     'data': [
+    	'security/security.xml',
         'views/purchase_order_views.xml',
         'views/res_partner_views.xml',
         'views/sale_order_views.xml',
