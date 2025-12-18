@@ -13,6 +13,12 @@
                 <field name="purchase_order_ids" invisible="1"/>
             </field>
 
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+                <field name="purchase_order_id" string="P.O" readonly="1"/>
+                <button id="create_purchase_id" name="create_purchase" string="Create Purchase" type="object" class="btn-primary" optional="show" invisible="purchase_order_id"/>
+                
+            </xpath>
+
         </field>
     </record>
 </odoo>
