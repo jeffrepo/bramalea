@@ -9,7 +9,7 @@
     'author': "Jefferson Silva",
     'website': "",
     'category': 'Uncategorized',
-    'version': '1.0',
+    'version': '17.1.0',
     'license': 'LGPL-3',
     'depends': ['stock', 'product', 'sale'],
     'data': [
